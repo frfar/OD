@@ -1,13 +1,9 @@
-<<<<<<< HEAD
-import React, { useState } from 'react';
 import {
     BrowserRouter as Router,
     Switch,
     Route
 } from "react-router-dom";
-=======
 import React, { useState, useEffect } from 'react';
->>>>>>> 71615ea5c8fc45d777782b85f76fe9d35f25223b
 import './App.css';
 import IntroPage from './ObjectPage/IntroPage';
 import BookPage from './ObjectPage/BookPage';
@@ -94,36 +90,6 @@ function App() {
         
     ]
     return (
-<<<<<<< HEAD
-          <div className="App" style={backgroundStyle}>
-              <Navbar />
-              <Router>
-                  <Switch>
-                        <Route exact path="/" component={OriginPage}/>
-                        <Route path="/CartPage" component={CartPage}
-                            items = {list_items}
-                        />
-                        <Route path="/LoginPage" component={LoginPage}
-                            logo="https://www.ebuyonline.co.uk/img/ebuy-online-ltd-logo-1525558004.jpg"
-                        />
-                        <Route path="/HomePage" component={HomePage}
-                            logo="https://www.ebuyonline.co.uk/img/ebuy-online-ltd-logo-1525558004.jpg"
-                            cart="https://icons-for-free.com/iconfiles/png/512/cart-131964784999299812.png"
-                            login="https://www.trzcacak.rs/myfile/detail/3-39618_login-icon-with-transparent-background.png"
-                            img="https://c402277.ssl.cf1.rackcdn.com/photos/14785/images/story_full_width/shutterstock_532108075.jpg?1512507049"
-                            items = {list_items}/>
-                        <Route path="/ObjectPage" component={ObjectPage}
-                            img='https://c402277.ssl.cf1.rackcdn.com/photos/14785/images/story_full_width/shutterstock_532108075.jpg?1512507049'
-                            currentPriceOption={price.priceOption}
-                            changePriceOption={priceOptionHandler}
-                            price={price.price}
-                            quantity={price.quantity}
-                            changeQuantity={quantityHandler}/>
-                  </Switch>
-              </Router>
-              <Footer />
-        </div>
-=======
       <div className="App" style={backgroundStyle}>
         {/* <Navbar /> */}
         {/* <OriginPage/> */}
@@ -155,7 +121,6 @@ function App() {
             changeQuantity={quantityHandler}/> */}
         {/*<Footer />*/}
     </div>
->>>>>>> 71615ea5c8fc45d777782b85f76fe9d35f25223b
   );
 }
 export default App;
