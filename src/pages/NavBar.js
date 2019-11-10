@@ -1,5 +1,10 @@
 import React from 'react';
-
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
 import {
     Row,
     Col,
@@ -40,7 +45,9 @@ const NavBar = () => {
                                             </FormGroup>
                                         </Col>
                                         <Col sm={2}>
-                                            <Button style={textStyle}>GO</Button>
+                                            <Link to="/home">
+                                                <Button style={textStyle}>GO</Button>
+                                            </Link>
                                         </Col>
                                     </Row>
                                 </Form>
