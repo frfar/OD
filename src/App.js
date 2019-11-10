@@ -10,6 +10,7 @@ import Logo from "./HomePage/images/Atlanta.jpg";
 import Logo1 from "./HomePage/images/chicago.jpg";
 import Logo2 from "./HomePage/images/dallas.jpg";
 import Logo3 from "./HomePage/images/LOSANGELES.jpg";
+import OriginPage from './OriginPage/OriginPage';
 
 function App() {
     const [object, setObject] = useState({});
@@ -84,6 +85,7 @@ function App() {
     return (
       <div className="App" style={backgroundStyle}>
         <Navbar />
+        <OriginPage/>
         {/*<CartPage*/}
         {/*    items = {list_items}*/}
         {/*/>*/}

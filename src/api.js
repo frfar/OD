@@ -1,14 +1,15 @@
 var Amadeus = require('amadeus');
 
 var amadeus = new Amadeus({
-  clientId: 'REPLACE_BY_YOUR_API_KEY',
-  clientSecret: 'REPLACE_BY_YOUR_API_SECRET'
+    clientId: '5lBJbMG49V4CTi5dKJwjMlLDAsvujay2',
+    clientSecret: 'EV6yNGpowjDAOh6Q'
 });
 
+console.log(amadeus)
 amadeus.referenceData.urls.checkinLinks.get({
-  airlineCode: 'BA'
+    airlineCode: 'BA'
 }).then(function(response){
-  console.log(response.data[0].href);
+    console.log(response.data);
 }).catch(function(responseError){
-  console.log(responseError.code);
+    console.log(responseError.code);
 });
