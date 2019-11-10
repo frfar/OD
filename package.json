@@ -13,11 +13,8 @@
     "react": "^16.10.2",
     "react-bootstrap": "^1.0.0-beta.13",
     "react-dom": "^16.10.2",
-<<<<<<< HEAD
     "react-resize-image": "^1.0.4",
-=======
     "react-router-dom": "^5.1.2",
->>>>>>> 36dce121ccdbe2edbe7aaacac344755007b890f6
     "react-scripts": "3.2.0",
     "reactstrap": "^8.0.1"
   },
