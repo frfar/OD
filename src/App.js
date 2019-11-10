@@ -6,6 +6,7 @@ import Footer from './FooterComponent/FooterComponent';
 import HomePage from './HomePage/HomePage';
 import LoginPage from './LoginPage/LoginPage';
 import CartPage from './CartPage/CartPage';
+import OriginPage from './OriginPage/OriginPage';
 
 function App() {
 
@@ -42,8 +43,8 @@ function App() {
     };
 
     var list_items = [
-        ["https://images-na.ssl-images-amazon.com/images/I/81WJyO53YAL._SY679_.jpg", "Pineapple", 10],
-        ["https://as-images.apple.com/is/og-default?wid=1200&hei=630&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1525370171638", "Apple", 10],
+        ["https://www.irishtimes.com/polopoly_fs/1.2737456.1469712897!/image/image.jpg_gen/derivatives/box_620_330/image.jpg", "The Bahamas", 1500],
+        ["https://media2.fdncms.com/orlando/imager/u/original/25772767/adobestock_129238917.jpeg", "Orlando", 1000],
         ["https://www.cross.com/media/catalog/product/cache/2d9d76f34da5071e6b70583d468484c0/f/d/fd7ygwu1jmqd60nvrzog_1_6.jpg", 10],
         ["https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12193133/German-Shepherd-Puppy-Fetch.jpg", 10],
         ["https://www.rainforest-alliance.org/sites/default/files/styles/750w_585h/public/2016-09/three-toed-sloth.jpg?itok=uWF-NdZZ", 10],
@@ -55,26 +56,27 @@ function App() {
     return (
       <div className="App" style={backgroundStyle}>
         <Navbar />
+        <OriginPage/>
         {/*<CartPage*/}
         {/*    items = {list_items}*/}
         {/*/>*/}
         {/* <LoginPage />*/}
         {/*    logo="https://www.ebuyonline.co.uk/img/ebuy-online-ltd-logo-1525558004.jpg"*/}
         {/*/>*/}
-        {/* <HomePage
-            logo="https://www.ebuyonline.co.uk/img/ebuy-online-ltd-logo-1525558004.jpg"
-            cart="https://icons-for-free.com/iconfiles/png/512/cart-131964784999299812.png"
-            login="https://www.trzcacak.rs/myfile/detail/3-39618_login-icon-with-transparent-background.png"
-            img="https://c402277.ssl.cf1.rackcdn.com/photos/14785/images/story_full_width/shutterstock_532108075.jpg?1512507049"
-        items = {list_items}/> */}
-        { <ObjectPage
-            img='https://c402277.ssl.cf1.rackcdn.com/photos/14785/images/story_full_width/shutterstock_532108075.jpg?1512507049'
-            currentPriceOption={price.priceOption}
-            changePriceOption={priceOptionHandler}
-            price={price.price}
-            quantity={price.quantity}
-        changeQuantity={quantityHandler}/> }
-        <Footer />
+        {/*<HomePage*/}
+        {/*    logo="https://www.ebuyonline.co.uk/img/ebuy-online-ltd-logo-1525558004.jpg"*/}
+        {/*    cart="https://icons-for-free.com/iconfiles/png/512/cart-131964784999299812.png"*/}
+        {/*    login="https://www.trzcacak.rs/myfile/detail/3-39618_login-icon-with-transparent-background.png"*/}
+        {/*    img="https://c402277.ssl.cf1.rackcdn.com/photos/14785/images/story_full_width/shutterstock_532108075.jpg?1512507049"*/}
+        {/*    items = {list_items}/>*/}
+        {/*<ObjectPage*/}
+        {/*    img='https://c402277.ssl.cf1.rackcdn.com/photos/14785/images/story_full_width/shutterstock_532108075.jpg?1512507049'*/}
+        {/*    currentPriceOption={price.priceOption}*/}
+        {/*    changePriceOption={priceOptionHandler}*/}
+        {/*    price={price.price}*/}
+        {/*    quantity={price.quantity}*/}
+        {/*    changeQuantity={quantityHandler}/>*/}
+        {/*<Footer />*/}
     </div>
   );
 }

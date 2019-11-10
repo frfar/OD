@@ -2,7 +2,7 @@ import React from 'react'
 
 const displayObjectImage = (props ) => {
     return (
-        <div  style={{width: '247%'}} id="carouselExampleInterval" className="carousel slide border" data-ride="carousel">
+        <div style={{width:"247%"}} id="carouselExampleInterval" className="carousel slide border" data-ride="carousel">
             <div className="carousel-inner">
                 <div className="carousel-item active">
                     <img src={ props.img } className="d-block w-100" alt="..." />
