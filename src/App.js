@@ -10,6 +10,9 @@ import Logo from "./HomePage/images/Atlanta.jpg";
 import Logo1 from "./HomePage/images/chicago.jpg";
 import Logo2 from "./HomePage/images/dallas.jpg";
 import Logo3 from "./HomePage/images/LOSANGELES.jpg";
+import Logo4 from "./HomePage/images/miami.jpg";
+import Logo5 from "./HomePage/images/seattle.jpg";
+import Logo6 from "./HomePage/images/newYork.jpg";
 import OriginPage from './OriginPage/OriginPage';
 
 function App() {
@@ -75,11 +78,14 @@ function App() {
         [Logo1, "Chicago", 323],
         [Logo2, "Atlanta", 234],
         [Logo3, "Los Angeles", 532],
-        [Logo, "Denver", 234],
-        [Logo1, "Charlotte", 121],
-        [Logo2, "Las Vegas", 241],
+        [Logo4, "Denver", 234],
+        [Logo5, "Charlotte", 121],
+        [Logo6, "Las Vegas", 241],
         [Logo3, "San Fransisco", 101],
-        [Logo, "Houston", 532]
+        [Logo2, "Houston", 532],
+        [Logo, "Houston", 532],
+        [Logo6, "Houston", 532],
+        [Logo4, "Houston", 532]
         
     ]
     return (

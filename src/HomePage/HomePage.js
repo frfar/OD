@@ -21,7 +21,7 @@ const HomePage = (props) => {
         height: "170px"
     }
 
-    
+
 
     let store_row_1 = [];
     let store_row_2 = [];
@@ -33,7 +33,7 @@ const HomePage = (props) => {
                 <Card style={cardStyle}>
                     <img style={imgStyle} src={props.items[i][0]} className='card-img-top'/>
                     <CardBody>
-                        <CardTitle>{props.items[i][1]}</CardTitle>
+                        <CardTitle><h5>{props.items[i][1]}</h5></CardTitle>
                         <CardText>Round trip costs ${props.items[i][2]}</CardText>
                         <Button href={props.items[i][0]} color="primary">Book</Button>
                     </CardBody>
@@ -43,7 +43,7 @@ const HomePage = (props) => {
                 <Card style={cardStyle}>
                     <img style={imgStyle} src={props.items[i][0]} className='card-img-top'/>
                     <CardBody>
-                        <CardTitle>{props.items[i][1]}</CardTitle>
+                        <CardTitle><h5>{props.items[i][1]}</h5></CardTitle>
                         <CardText>Round trip costs ${props.items[i][2]}</CardText>
                         <Button href={props.items[i][0]} color="primary">Book</Button>
                     </CardBody>
@@ -53,7 +53,7 @@ const HomePage = (props) => {
                 <Card style={cardStyle}>
                     <img style={imgStyle} src={props.items[i][0]} className='card-img-top'/>
                     <CardBody>
-                        <CardTitle>{props.items[i][1]}</CardTitle>
+                        <CardTitle><h5>{props.items[i][1]}</h5></CardTitle>
                         <CardText>Round trip costs ${props.items[i][2]}</CardText>
                         <Button href={props.items[i][0]} color="primary">Book</Button>
                     </CardBody>
