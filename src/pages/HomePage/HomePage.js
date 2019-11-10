@@ -12,6 +12,9 @@ import {Row, Col,
     Container,
     Card, CardText, CardTitle, CardBody} from 'reactstrap';
 
+
+
+
 const HomePage = (props) => {
     const bodyStyle = {
         padding: "20px 17.5% 20px 17.5%"

@@ -14,7 +14,7 @@ import {
     Input, Button
 } from 'reactstrap';
 
-const NavBar = () => {
+const NavBar = ({name1, name1Onchange, email, emailOnchange, company, companyOnchange}) => {
     const askStyle = {
         margin: "auto",
         marginTop: "100px",
@@ -61,7 +61,7 @@ const NavBar = () => {
                                     <Row>
                                         <Col sm={10}>
                                             <FormGroup style={textStyle}>
-                                                <Input style={textStyle} type="air" name="origin" id="airport" placeholder="Where Are You?" />
+                                                <Input style={textStyle} type="air" value={name1} onChange={name1Onchange} name="origin" id="airport" placeholder="Where Are You?" />
                                             </FormGroup>
                                         </Col>
                                         <Col sm={2}>

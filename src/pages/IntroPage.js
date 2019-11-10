@@ -4,7 +4,7 @@ import DisplayBackground from './DisplayBackground';
 import NavBar from './NavBar';
 
 
-const IntroPage = ( props ) => {
+const IntroPage = (props,{name1, name1Onchange, email, emailOnchange, company, companyOnchange}) => {
     return(
         <div>
             <Row>
@@ -14,7 +14,7 @@ const IntroPage = ( props ) => {
                     </div>
                 </Col>
                 <Col>
-                    <NavBar />
+                    <NavBar name1={name1} name1Onchange={name1Onchange} />
                 </Col>
             </Row>
         </div>
