@@ -1,10 +1,9 @@
 var express = require('express');
 var router = express.Router();
+var Amadeus= require("amadeus")
 
 
 
-const GSR = require('google-search-results-nodejs')
-const client = new GSR.GoogleSearchResults("AIzaSyBWfuBeeuxLPuD5IqKVDzlrRk_zHZccIWo")
 
 
     
