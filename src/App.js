@@ -5,11 +5,11 @@ import {
 } from "react-router-dom";
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import IntroPage from './ObjectPage/IntroPage';
-import BookPage from './ObjectPage/BookPage';
+
+//import BookPage from './ObjectPage/BookPage';
 import Navbar from './HeaderComponent/HeaderComponent';
 import Footer from './FooterComponent/FooterComponent';
-import HomePage from './HomePage/HomePage';
+//import HomePage from './HomePage/HomePage';
 import LoginPage from './LoginPage/LoginPage';
 import CartPage from './CartPage/CartPage';
 import Logo1 from "./HomePage/images/Denver.jpg";
@@ -25,7 +25,11 @@ import Logo10 from "./HomePage/images/Yosemite.jpg";
 import Logo11 from "./HomePage/images/Indianapolis.jpg";
 import Logo12 from "./HomePage/images/Durham.jpg";
 import OriginPage from './OriginPage/OriginPage';
-
+//import { BrowserRouter as R, Link, Route, Switch, Redirect } from 'react-router-dom'
+//import Navig from './Components/Navig'
+import BookPage from './pages/BookPage.jsx'
+import Intro from './pages/Intro.jsx'
+import Suggestions from './pages/Suggestions.jsx'
 
 function App() {
     const [object, setObject] = useState({});
@@ -85,21 +89,7 @@ function App() {
         height: '100%'
     };
 
-    var list_items = [
-        [Logo1, "Denver", 77],
-        [Logo2, "Philadelphia", 119],
-        [Logo3, "Detroit", 125],
-        [Logo4, "Salt Lake City", 177],
-        [Logo5, "Austin", 185],
-        [Logo6, "Cincinnati", 199],
-        [Logo7, "Louisville", 201],
-        [Logo8, "Hartford", 202],
-        [Logo9, "Ontario", 216],
-        [Logo10, "Yosemite", 216],
-        [Logo11, "Indianapolis", 217],
-        [Logo12, "Durham", 217]
-        
-    ]
+    
     return (
       <div className="App" style={backgroundStyle}>
         {/* <Navbar /> */}
@@ -116,13 +106,13 @@ function App() {
             login="https://www.trzcacak.rs/myfile/detail/3-39618_login-icon-with-transparent-background.png"
             img="https://c402277.ssl.cf1.rackcdn.com/photos/14785/images/story_full_width/shutterstock_532108075.jpg?1512507049"
             items = {list_items}/> */}
-        <IntroPage
+        {/* <IntroPage
             img='https://singularityhub.com/wp-content/uploads/2018/12/airplane-flying-above-clouds_shutterstock_553131187-1068x601.jpg'
             currentPriceOption={price.priceOption}
             changePriceOption={priceOptionHandler}
             price={price.price}
             quantity={price.quantity}
-            changeQuantity={quantityHandler}/>
+            changeQuantity={quantityHandler}/> */}
         {/* <BookPage
             img='https://singularityhub.com/wp-content/uploads/2018/12/airplane-flying-above-clouds_shutterstock_553131187-1068x601.jpg'
             currentPriceOption={price.priceOption}
@@ -131,6 +121,23 @@ function App() {
             quantity={price.quantity}
             changeQuantity={quantityHandler}/> */}
         {/*<Footer />*/}
+        <Router>
+        <div>
+        
+        <Switch>
+        
+          <Route exact path="/" component = {Intro}/>
+          <Route exact path="/home" component = {Suggestions}/>
+          <Route exact path="/BookPage"component={BookPage}/>
+          
+        
+        
+        
+          
+            
+        </Switch> 
+        </div> 
+      </Router>
     </div>
   );
 }
