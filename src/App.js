@@ -12,13 +12,18 @@ import Footer from './FooterComponent/FooterComponent';
 import HomePage from './HomePage/HomePage';
 import LoginPage from './LoginPage/LoginPage';
 import CartPage from './CartPage/CartPage';
-import Logo from "./HomePage/images/Atlanta.jpg";
-import Logo1 from "./HomePage/images/chicago.jpg";
-import Logo2 from "./HomePage/images/dallas.jpg";
-import Logo3 from "./HomePage/images/LOSANGELES.jpg";
-import Logo4 from "./HomePage/images/miami.jpg";
-import Logo5 from "./HomePage/images/seattle.jpg";
-import Logo6 from "./HomePage/images/newYork.jpg";
+import Logo1 from "./HomePage/images/Denver.jpg";
+import Logo2 from "./HomePage/images/Philly.jpg";
+import Logo3 from "./HomePage/images/Detroit.jpg";
+import Logo4 from "./HomePage/images/SLC.jpg";
+import Logo5 from "./HomePage/images/Austin.jpg";
+import Logo6 from "./HomePage/images/Cincinnati.jpg";
+import Logo7 from "./HomePage/images/Louisville.jpg";
+import Logo8 from "./HomePage/images/Hartford.jpg";
+import Logo9 from "./HomePage/images/Ontario.jpg";
+import Logo10 from "./HomePage/images/Yosemite.jpg";
+import Logo11 from "./HomePage/images/Indianapolis.jpg";
+import Logo12 from "./HomePage/images/Durham.jpg";
 import OriginPage from './OriginPage/OriginPage';
 
 
@@ -81,18 +86,18 @@ function App() {
     };
 
     var list_items = [
-        [Logo, "Dallas", 10],
-        [Logo1, "Chicago", 323],
-        [Logo2, "Atlanta", 234],
-        [Logo3, "Los Angeles", 532],
-        [Logo4, "Denver", 234],
-        [Logo5, "Charlotte", 121],
-        [Logo6, "Las Vegas", 241],
-        [Logo3, "San Fransisco", 101],
-        [Logo2, "Houston", 532],
-        [Logo, "Houston", 532],
-        [Logo6, "Houston", 532],
-        [Logo4, "Houston", 532]
+        [Logo1, "Denver", 77],
+        [Logo2, "Philadelphia", 119],
+        [Logo3, "Detroit", 125],
+        [Logo4, "Salt Lake City", 177],
+        [Logo5, "Austin", 185],
+        [Logo6, "Cincinnati", 199],
+        [Logo7, "Louisville", 201],
+        [Logo8, "Hartford", 202],
+        [Logo9, "Ontario", 216],
+        [Logo10, "Yosemite", 216],
+        [Logo11, "Indianapolis", 217],
+        [Logo12, "Durham", 217]
         
     ]
     return (
