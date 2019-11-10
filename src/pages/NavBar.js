@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {
     BrowserRouter as Router,
     Switch,
@@ -30,6 +30,26 @@ const NavBar = () => {
         width: "100%",
         height: "100%"
     };
+
+    async function fetchData() {
+        
+        const BASE_URL = 'http://localhost:3050'
+        fetch(`${BASE_URL}`, { 
+          method: 'GET',
+          headers:{
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Credentials':true,
+            'Access-Control-Allow-Methods':'POST, GET'
+          }
+        })
+        .then(response => response.json())
+        .then(json => console.log(json));
+        
+        
+    }
+    useEffect(() => {
+        fetchData();
+        }, []);
     return(
         <div className="App">
             <Container fluid={true}>
@@ -37,11 +57,11 @@ const NavBar = () => {
                     <Row>
                         <div style={askStyle}>
                             <div>
-                                <Form>
+                                <Form action="/home" method="GET">
                                     <Row>
                                         <Col sm={10}>
                                             <FormGroup style={textStyle}>
-                                                <Input style={textStyle} type="air" name="air" id="airport" placeholder="Where Are You?" />
+                                                <Input style={textStyle} type="air" name="origin" id="airport" placeholder="Where Are You?" />
                                             </FormGroup>
                                         </Col>
                                         <Col sm={2}>

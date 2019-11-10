@@ -52,6 +52,7 @@ router.get('/city', function(req, res, next) {
         for (var i = 0; i < 12; i++) {
             json.push(data[i])
         }
+        console.log(json)
         return res.json(json);
 
     }).catch(function(responseError) {

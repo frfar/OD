@@ -40,10 +40,10 @@ const OriginPage = () => {
                     <Row>
                         <Card style={askStyle}>
                             <CardBody>
-                                <Form>
+                                <Form  action={'/home'} method='GET'>
                                     <FormGroup style={textStyle}>
                                         <Label for="airport">Nearest Airport</Label>
-                                        <Input style={textStyle} type="air" name="air" id="airport" placeholder="e.g. DFW" />
+                                        <Input style={textStyle} type="air" name="origin" id="airport" placeholder="e.g. DFW" />
                                     </FormGroup>
                                     <Link to="ObjectPage">
                                         <Button style={textStyle}>Submit</Button>
