@@ -8,7 +8,7 @@ import Book from './BookPage.js'
 const BookPage = () => {
     return (
         <Book
-            img='https://singularityhub.com/wp-content/uploads/2018/12/airplane-flying-above-clouds_shutterstock_553131187-1068x601.jpg'
+            img='https://www.billboard.com/files/styles/768x433/public/media/denver-skyline-2019-fea-billboard-1500.jpg'
             />
     );
 };

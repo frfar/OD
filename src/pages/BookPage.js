@@ -14,7 +14,12 @@ const BookPage = ( props ) => {
                     </div>
                 </Col>
                 <Col>
-                    <BoardPass />
+                    <BoardPass 
+                    origin="DFW"
+                    destination="Denver"
+                    depDate="01-01-2020"
+                    retDate="01-08-2020"
+                    price="100" />
                 </Col>
             </Row>
         </div>

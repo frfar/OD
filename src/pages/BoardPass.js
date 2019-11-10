@@ -25,20 +25,20 @@ const BoardPass = (props) => {
           <h4>Flight Info</h4>
           <Row>
                 <Col>
-                    origin: 
+                    origin: { props.origin }
                 </Col>
                 <Col>
-                    destination: 
+                    destination: { props.destination }
                 </Col>
           </Row>
           <Row style={{height: "10px"}}>
           </Row>
           <Row>
                 <Col>
-                    Departure date: 
+                    Departure date: { props.depDate }
                 </Col>
                 <Col>
-                    Return date: 
+                    Return date: { props.retDate }
                 </Col>
           </Row>
           <Row style={{height: "10px"}}>
