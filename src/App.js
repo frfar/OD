@@ -58,22 +58,22 @@ function App() {
         {/*<CartPage*/}
         {/*    items = {list_items}*/}
         {/*/>*/}
-        {/*<LoginPage />*/}
+        {/* <LoginPage />*/}
         {/*    logo="https://www.ebuyonline.co.uk/img/ebuy-online-ltd-logo-1525558004.jpg"*/}
         {/*/>*/}
-        {/*<HomePage*/}
-        {/*    logo="https://www.ebuyonline.co.uk/img/ebuy-online-ltd-logo-1525558004.jpg"*/}
-        {/*    cart="https://icons-for-free.com/iconfiles/png/512/cart-131964784999299812.png"*/}
-        {/*    login="https://www.trzcacak.rs/myfile/detail/3-39618_login-icon-with-transparent-background.png"*/}
-        {/*    img="https://c402277.ssl.cf1.rackcdn.com/photos/14785/images/story_full_width/shutterstock_532108075.jpg?1512507049"*/}
-        {/*    items = {list_items}/>*/}
-        <ObjectPage
+        {/* <HomePage
+            logo="https://www.ebuyonline.co.uk/img/ebuy-online-ltd-logo-1525558004.jpg"
+            cart="https://icons-for-free.com/iconfiles/png/512/cart-131964784999299812.png"
+            login="https://www.trzcacak.rs/myfile/detail/3-39618_login-icon-with-transparent-background.png"
+            img="https://c402277.ssl.cf1.rackcdn.com/photos/14785/images/story_full_width/shutterstock_532108075.jpg?1512507049"
+        items = {list_items}/> */}
+        { <ObjectPage
             img='https://c402277.ssl.cf1.rackcdn.com/photos/14785/images/story_full_width/shutterstock_532108075.jpg?1512507049'
             currentPriceOption={price.priceOption}
             changePriceOption={priceOptionHandler}
             price={price.price}
             quantity={price.quantity}
-            changeQuantity={quantityHandler}/>
+        changeQuantity={quantityHandler}/> }
         <Footer />
     </div>
   );

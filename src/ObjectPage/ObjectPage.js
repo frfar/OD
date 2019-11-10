@@ -6,7 +6,7 @@ import ObjectPrice from './ObjectPrice';
 
 const objectPage = ( props ) => {
     const boxStyle = {
-        padding: '3%',
+        padding: '3%'
     };
 
     return(
@@ -14,10 +14,6 @@ const objectPage = ( props ) => {
             <Row>
                 <Col xs={5}>
                     <div>
-                        <Breadcrumb>
-                            <BreadcrumbItem><a href="http://localhost:3000/">Home</a></BreadcrumbItem>
-                            <BreadcrumbItem active>The Amazing Sloth</BreadcrumbItem>
-                        </Breadcrumb>
                         <DisplayImage img={ props.img }/>
                     </div>
                 </Col>
@@ -27,14 +23,6 @@ const objectPage = ( props ) => {
                 <Col>
                     <ObjectPrice priceOption={props.currentPriceOption} changePriceOption={props.changePriceOption} price={props.price}
                         quantity={props.quantity} changeQuantity={props.changeQuantity}/>
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <h1>Rating Section</h1>
-                </Col>
-                <Col>
-                    <h1>Comment Section</h1>
                 </Col>
             </Row>
         </div>

@@ -2,13 +2,13 @@ import React from 'react'
 
 const displayObjectImage = (props ) => {
     return (
-        <div  id="carouselExampleInterval" className="carousel slide border" data-ride="carousel">
+        <div  style={{width: '247%'}} id="carouselExampleInterval" className="carousel slide border" data-ride="carousel">
             <div className="carousel-inner">
                 <div className="carousel-item active">
                     <img src={ props.img } className="d-block w-100" alt="..." />
                 </div>
                 <div className="carousel-item">
-                    <img src="https://www.nationalgeographic.com/content/dam/animals/2018/10/sloth-energy/01-sloth-energy-nationalgeographic_1046424.jpg" className="d-block w-100" alt="..." />
+                    <img  src="https://www.nationalgeographic.com/content/dam/animals/2018/10/sloth-energy/01-sloth-energy-nationalgeographic_1046424.jpg" className="d-block w-100" alt="..." />
                 </div>
                 <div className="carousel-item">
                     <img src="https://c.tadst.com/gfx/750w/international-sloth-day.jpg" className="d-block w-100" alt="..." />
