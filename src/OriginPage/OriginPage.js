@@ -1,13 +1,7 @@
 import React from 'react';
 
 import {
-    Navbar,
     Row,
-    Col,
-    ListGroup,
-    ListGroupItem,
-    ListGroupItemText,
-    ListGroupItemHeading,
     Container,
     Card,
     CardBody,
@@ -16,7 +10,10 @@ import {
     Label,
     Input, Button
 } from 'reactstrap';
-
+import {
+    BrowserRouter as Router,
+    Link
+} from "react-router-dom";
 const OriginPage = () => {
     const askStyle = {
         margin: "auto",
@@ -29,14 +26,17 @@ const OriginPage = () => {
         borderRadius: "50px"
     };
     const bgStyle = {
-        width: "100%",
-        height: "100%"
+        backgroundImage: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fcdn-image.travelandleisure.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F1600x1000%2Fpublic%2F1568237853%2Fhawaiian-airlines-plane-PLANEPAINT0919.jpg%3Fitok%3Dwz3vDt-u&w=400&c=sc&poi=face&q=85",
+        height: "100%",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover"
     };
     return(
-        <div className="App">
+        <div style={bgStyle} className="App">
             <Container fluid={true}>
-                <img style={bgStyle} src={"https://www.rd.com/wp-content/uploads/2017/10/Why-Are-Commercial-Airplanes-White-_493536652-Jag_cz-760x506.jpg"}/>
                 <div style={bgStyle}>
+                    <img src={"https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fcdn-image.travelandleisure.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F1600x1000%2Fpublic%2F1568237853%2Fhawaiian-airlines-plane-PLANEPAINT0919.jpg%3Fitok%3Dwz3vDt-u&w=400&c=sc&poi=face&q=85"}/>
                     <Row>
                         <Card style={askStyle}>
                             <CardBody>
@@ -45,7 +45,9 @@ const OriginPage = () => {
                                         <Label for="airport">Nearest Airport</Label>
                                         <Input style={textStyle} type="air" name="air" id="airport" placeholder="e.g. DFW" />
                                     </FormGroup>
-                                    <Button style={textStyle}>Submit</Button>
+                                    <Link to="ObjectPage">
+                                        <Button style={textStyle}>Submit</Button>
+                                    </Link>
                                 </Form>
                             </CardBody>
                         </Card>
