@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import ObjectPage from './ObjectPage/ObjectPage';
+import IntroPage from './ObjectPage/IntroPage';
+import BookPage from './ObjectPage/BookPage';
 import Navbar from './HeaderComponent/HeaderComponent';
 import Footer from './FooterComponent/FooterComponent';
 import HomePage from './HomePage/HomePage';
@@ -92,35 +93,27 @@ function App() {
         {/* <LoginPage />*/}
         {/*    logo="https://www.ebuyonline.co.uk/img/ebuy-online-ltd-logo-1525558004.jpg"*/}
         {/*/>*/}
-<<<<<<< HEAD
-        {/*<HomePage*/}
-        {/*    logo="https://www.ebuyonline.co.uk/img/ebuy-online-ltd-logo-1525558004.jpg"*/}
-        {/*    cart="https://icons-for-free.com/iconfiles/png/512/cart-131964784999299812.png"*/}
-        {/*    login="https://www.trzcacak.rs/myfile/detail/3-39618_login-icon-with-transparent-background.png"*/}
-        {/*    img="https://c402277.ssl.cf1.rackcdn.com/photos/14785/images/story_full_width/shutterstock_532108075.jpg?1512507049"*/}
-        {/*    items = {list_items}/>*/}
-        <ObjectPage
-            img='https://singularityhub.com/wp-content/uploads/2018/12/airplane-flying-above-clouds_shutterstock_553131187-1068x601.jpg'
-=======
-        <HomePage
+        {/* <HomePage
             logo="https://www.ebuyonline.co.uk/img/ebuy-online-ltd-logo-1525558004.jpg"
-            cart="https://icons-for-free.com/iconfiles/png/512/cart-131964784999299812.png"
+           cart="https://icons-for-free.com/iconfiles/png/512/cart-131964784999299812.png"
             login="https://www.trzcacak.rs/myfile/detail/3-39618_login-icon-with-transparent-background.png"
             img="https://c402277.ssl.cf1.rackcdn.com/photos/14785/images/story_full_width/shutterstock_532108075.jpg?1512507049"
-            items = {list_items}/>
-        <ObjectPage
-            img='https://c402277.ssl.cf1.rackcdn.com/photos/14785/images/story_full_width/shutterstock_532108075.jpg?1512507049'
->>>>>>> 09943c956c605782fffe3c4abbc14757456b1bfd
+            items = {list_items}/> */}
+        <IntroPage
+            img='https://singularityhub.com/wp-content/uploads/2018/12/airplane-flying-above-clouds_shutterstock_553131187-1068x601.jpg'
             currentPriceOption={price.priceOption}
             changePriceOption={priceOptionHandler}
             price={price.price}
             quantity={price.quantity}
             changeQuantity={quantityHandler}/>
-<<<<<<< HEAD
+        {/* <BookPage
+            img='https://singularityhub.com/wp-content/uploads/2018/12/airplane-flying-above-clouds_shutterstock_553131187-1068x601.jpg'
+            currentPriceOption={price.priceOption}
+            changePriceOption={priceOptionHandler}
+            price={price.price}
+            quantity={price.quantity}
+            changeQuantity={quantityHandler}/> */}
         {/*<Footer />*/}
-=======
-        <Footer />
->>>>>>> 09943c956c605782fffe3c4abbc14757456b1bfd
     </div>
   );
 }

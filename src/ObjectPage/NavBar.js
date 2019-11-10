@@ -1,30 +1,21 @@
 import React from 'react';
 
 import {
-    Navbar,
     Row,
     Col,
-    ListGroup,
-    ListGroupItem,
-    ListGroupItemText,
-    ListGroupItemHeading,
     Container,
-    Card,
-    CardBody,
     Form,
     FormGroup,
-    Label,
     Input, Button
 } from 'reactstrap';
 
-const ObjectDescription = () => {
+const NavBar = () => {
     const askStyle = {
         margin: "auto",
         marginTop: "100px",
         marginLeft: "-25px",
         width: "100%",
         borderRadius: "25px",
-       // opacity: "0"
     };
     const textStyle = {
         fontSize: "55px",
@@ -61,4 +52,4 @@ const ObjectDescription = () => {
         </div>
     );
 }
-export default ObjectDescription;
+export default NavBar;
