@@ -12,18 +12,6 @@ import Footer from './FooterComponent/FooterComponent';
 //import HomePage from './HomePage/HomePage';
 import LoginPage from './LoginPage/LoginPage';
 import CartPage from './CartPage/CartPage';
-import Logo1 from "./HomePage/images/Denver.jpg";
-import Logo2 from "./HomePage/images/Philly.jpg";
-import Logo3 from "./HomePage/images/Detroit.jpg";
-import Logo4 from "./HomePage/images/SLC.jpg";
-import Logo5 from "./HomePage/images/Austin.jpg";
-import Logo6 from "./HomePage/images/Cincinnati.jpg";
-import Logo7 from "./HomePage/images/Louisville.jpg";
-import Logo8 from "./HomePage/images/Hartford.jpg";
-import Logo9 from "./HomePage/images/Ontario.jpg";
-import Logo10 from "./HomePage/images/Yosemite.jpg";
-import Logo11 from "./HomePage/images/Indianapolis.jpg";
-import Logo12 from "./HomePage/images/Durham.jpg";
 import OriginPage from './OriginPage/OriginPage';
 //import { BrowserRouter as R, Link, Route, Switch, Redirect } from 'react-router-dom'
 //import Navig from './Components/Navig'

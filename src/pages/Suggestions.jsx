@@ -3,26 +3,31 @@ import React from "react";
 import ReactDOM from 'react-dom';
 import HomePage from './HomePage/HomePage'
 //import Logo from "./images/0.jpg"
-import Logo from "./images/Atlanta.jpg";
-import Logo1 from "./images/chicago.jpg";
-import Logo2 from "./images/dallas.jpg";
-import Logo3 from "./images/LOSANGELES.jpg";
-import Logo4 from "./images/miami.jpg";
-import Logo5 from "./images/seattle.jpg";
-import Logo6 from "./images/newYork.jpg";
+import Logo1 from "./images/Denver.jpg";
+import Logo2 from "./images/Philly.jpg";
+import Logo3 from "./images/Detroit.jpg";
+import Logo4 from "./images/SLC.jpg";
+import Logo5 from "./images/Austin.jpg";
+import Logo6 from "./images/Cincinnati.jpg";
+import Logo7 from "./images/Louisville.jpg";
+import Logo8 from "./images/Hartford.jpg";
+import Logo9 from "./images/Ontario.jpg";
+import Logo10 from "./images/Yosemite.jpg";
+import Logo11 from "./images/Indianapolis.jpg";
+import Logo12 from "./images/Durham.jpg";
 var list_items = [
-    [Logo, "Dallas", 10],
-    [Logo1, "Chicago", 323],
-    [Logo2, "Atlanta", 234],
-    [Logo3, "Los Angeles", 532],
-    [Logo4, "Denver", 234],
-    [Logo5, "Charlotte", 121],
-    [Logo6, "Las Vegas", 241],
-    [Logo3, "San Fransisco", 101],
-    [Logo2, "Houston", 532],
-    [Logo, "Houston", 532],
-    [Logo6, "Houston", 532],
-    [Logo4, "Houston", 532]
+    [Logo1, "Denver", 77],
+    [Logo2, "Philadelphia", 119],
+    [Logo3, "Detroit", 125],
+    [Logo4, "Salt Lake City", 177],
+    [Logo5, "Austin", 185],
+    [Logo6, "Cincinnati", 199],
+    [Logo7, "Louisville", 201],
+    [Logo8, "Hartford", 202],
+    [Logo9, "Ontario", 216],
+    [Logo10, "Yosemite", 216],
+    [Logo11, "Indianapolis", 217],
+    [Logo12, "Durham", 217]
     
 ]
 
