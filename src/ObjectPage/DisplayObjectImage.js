@@ -1,27 +1,43 @@
 import React from 'react'
+import {
+    Navbar,
+    Row,
+    Col,
+    ListGroup,
+    ListGroupItem,
+    ListGroupItemText,
+    ListGroupItemHeading,
+    Container,
+    Card,
+    CardBody,
+    Form,
+    FormGroup,
+    Label,
+    Input, Button
+} from 'reactstrap';
 
 const displayObjectImage = (props ) => {
+    const askStyle = {
+        margin: "auto",
+        marginTop: "100px",
+        width: "65%",
+        borderRadius: "75px"
+    };
+    const textStyle = {
+        fontSize: "70px",
+        borderRadius: "50px"
+    };
+    const bgStyle = {
+        width: "100%",
+        height: "100%"
+    };
     return (
-        <div style={{width:"247%"}} id="carouselExampleInterval" className="carousel slide border" data-ride="carousel">
+        <div  style={{width: "250%"}} id="carouselExampleInterval" className="carousel slide border" data-ride="carousel">
             <div className="carousel-inner">
                 <div className="carousel-item active">
                     <img src={ props.img } className="d-block w-100" alt="..." />
                 </div>
-                <div className="carousel-item">
-                    <img src="https://www.nationalgeographic.com/content/dam/animals/2018/10/sloth-energy/01-sloth-energy-nationalgeographic_1046424.jpg" className="d-block w-100" alt="..." />
-                </div>
-                <div className="carousel-item">
-                    <img src="https://c.tadst.com/gfx/750w/international-sloth-day.jpg" className="d-block w-100" alt="..." />
-                </div>
             </div>
-            <a className="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"/>
-                <span className="sr-only">Previous</span>
-            </a>
-            <a className="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"/>
-                <span className="sr-only">Next</span>
-            </a>
         </div>
     )
 };

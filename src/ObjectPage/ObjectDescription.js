@@ -1,41 +1,64 @@
-import React from 'react'
+import React from 'react';
 
-const objectDescription = () => {
-    const boxStyle = {
-        padding: '3%',
+import {
+    Navbar,
+    Row,
+    Col,
+    ListGroup,
+    ListGroupItem,
+    ListGroupItemText,
+    ListGroupItemHeading,
+    Container,
+    Card,
+    CardBody,
+    Form,
+    FormGroup,
+    Label,
+    Input, Button
+} from 'reactstrap';
+
+const ObjectDescription = () => {
+    const askStyle = {
+        margin: "auto",
+        marginTop: "100px",
+        marginLeft: "-25px",
+        width: "100%",
+        borderRadius: "25px",
+       // opacity: "0"
     };
-
     const textStyle = {
-        textAlign: 'left'
+        fontSize: "55px",
+        borderRadius: "30px"
     };
-
-    const featureStyle = {
-        padding: '5%'
+    const bgStyle = {
+        width: "100%",
+        height: "100%"
     };
-
     return(
-        <div className='shadow p-3 mb-5 bg-white rounded' style={boxStyle}>
-            <h1>The Amazing Sloth</h1>
-            <div>
-                <h5>Description</h5>
-                <hr />
-                <p>
-                    Sloths are very fun and easy animal to take care of because they like to sleep and eat.
-                    They can help ease your pain by simply hugging the sloth. They are very curious animal
-                    that like to observe its surrounding. They are truly amazing animals.
-                </p>
-            </div>
-            <div style={featureStyle}>
-                <h5>Features</h5>
-                <hr />
-                <ul style={textStyle}>
-                    <li>Lazy</li>
-                    <li>Caring</li>
-                    <li>Hanging</li>
-                </ul>
-            </div>
+        <div className="App">
+            <Container fluid={true}>
+                <div style={bgStyle}>
+                    <Row>
+                        <div style={askStyle}>
+                            <div>
+                                <Form>
+                                    <Row>
+                                        <Col sm={10}>
+                                            <FormGroup style={textStyle}>
+                                                <Input style={textStyle} type="air" name="air" id="airport" placeholder="Where Are You?" />
+                                            </FormGroup>
+                                        </Col>
+                                        <Col sm={2}>
+                                            <Button style={textStyle}>GO</Button>
+                                        </Col>
+                                    </Row>
+                                </Form>
+                            </div>
+                        </div>
+                    </Row>
+                </div>
+            </Container>
         </div>
-    )
-};
-
-export default objectDescription;
+    );
+}
+export default ObjectDescription;
