@@ -28,7 +28,56 @@ const HomePage = (props) => {
         
         height: "170px"
     }
-
+    const arr = [
+        [
+            "DFW",
+            "Denver"
+        ],
+        [
+            "DFW",
+            "Philadelphia"
+        ],
+        [
+            "DFW",
+            "Denver"
+        ],
+        [
+            "DFW",
+            "Philadelphia"
+        ],
+        [
+            "DFW",
+            "Denver"
+        ],
+        [
+            "DFW",
+            "Philadelphia"
+        ],
+        [
+            "DFW",
+            "Denver"
+        ],
+        [
+            "DFW",
+            "Philadelphia"
+        ],
+        [
+            "DFW",
+            "Denver"
+        ],
+        [
+            "DFW",
+            "Philadelphia"
+        ],
+        [
+            "DFW",
+            "Denver"
+        ],
+        [
+            "DFW",
+            "Philadelphia"
+        ]
+    ]
 
 
     let store_row_1 = [];

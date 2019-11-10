@@ -15,8 +15,8 @@ const BookPage = ( props ) => {
                 </Col>
                 <Col>
                     <BoardPass 
-                    origin="DFW"
-                    destination="Denver"
+                    origin={props.origin}
+                    destination={props.destination}
                     depDate="01-01-2020"
                     retDate="01-08-2020"
                     price="100" />

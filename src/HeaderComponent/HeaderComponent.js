@@ -21,19 +21,20 @@ const headerComponent = ( props ) => {
     }
     return(
         <div>
-            <Navbar color="dark" light expand="md">
+            <Navbar color="white" light expand="md">
                 <NavbarBrand href="http://localhost:3000/">
                     <img
-                        src="https://www.ebuyonline.co.uk/img/ebuy-online-ltd-logo-1525558004.jpg?fbclid=IwAR0Js3L52YZdrGYjSnAMFEn9tRk2hKjXzZyfiqQkP1-oHqsG12ilRPGdVb8"
-                        width="100"
-                        height="40"
+                        src="https://smlogin.aa.com/login/images/aa-logo-web.png"
+                        width="250"
+                        height="50"
                         className="d-inline-block align-top"
                         alt="React Bootstrap logo"
                     />
                 </NavbarBrand>
                 <NavbarToggler/>
                 <Collapse navbar>
-                    <Col style={searchStyle} xs={10}>
+                    
+                    <Col style={searchStyle} xs={8}>
                         <input style={searchStyle} className="form-control" type="text" placeholder="Search" aria-label="Search"/>
                     </Col>
                     <Nav className="ml-auto" navbar>
