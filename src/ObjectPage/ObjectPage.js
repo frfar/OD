@@ -4,6 +4,7 @@ import DisplayImage from './DisplayObjectImage';
 import ObjectDescription from './ObjectDescription';
 import ObjectPrice from './ObjectPrice';
 
+
 const objectPage = ( props ) => {
     const boxStyle = {
         padding: '3%',
@@ -22,7 +23,9 @@ const objectPage = ( props ) => {
                     </div>
                 </Col>
                 <Col>
+                    
                     <ObjectDescription />
+                    
                 </Col>
                 <Col>
                     <ObjectPrice priceOption={props.currentPriceOption} changePriceOption={props.changePriceOption} price={props.price}

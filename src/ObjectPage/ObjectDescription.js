@@ -1,4 +1,5 @@
 import React from 'react'
+import Destination from './Destination';
 
 const objectDescription = () => {
     const boxStyle = {
@@ -17,6 +18,7 @@ const objectDescription = () => {
         <div className='shadow p-3 mb-5 bg-white rounded' style={boxStyle}>
             <h1>The Amazing Sloth</h1>
             <div>
+                <Destination/>
                 <h5>Description</h5>
                 <hr />
                 <p>
