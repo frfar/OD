@@ -5,27 +5,27 @@ import Footer from '../FooterComponent/FooterComponent';
 import ReactDOM from 'react-dom';
 import HomePage from './HomePage/HomePage'
 //import Logo from "./images/0.jpg"
-import Logo1 from "./images/Denver.jpg";
-import Logo2 from "./images/Philly.jpg";
-import Logo3 from "./images/Detroit.jpg";
-import Logo4 from "./images/SLC.jpg";
-import Logo5 from "./images/Austin.jpg";
-import Logo6 from "./images/Cincinnati.jpg";
-import Logo7 from "./images/Louisville.jpg";
-import Logo8 from "./images/Hartford.jpg";
+import Logo1 from "./images/iran1.jpg";
+import Logo2 from "./images/iran2.jpg";
+import Logo3 from "./images/iran3.jpg";
+import Logo4 from "./images/iran4.jpg";
+import Logo5 from "./images/iran5.jpg";
+import Logo6 from "./images/iran6.jpg";
+import Logo7 from "./images/iran7.jpg";
+import Logo8 from "./images/iran8.jpg";
 import Logo9 from "./images/Ontario.jpg";
 import Logo10 from "./images/Yosemite.jpg";
 import Logo11 from "./images/Indianapolis.jpg";
 import Logo12 from "./images/Durham.jpg";
 var list_items = [
-    [Logo1, "Denver", 77],
-    [Logo2, "Philadelphia", 119],
-    [Logo3, "Detroit", 125],
-    [Logo4, "Salt Lake City", 177],
-    [Logo5, "Austin", 185],
-    [Logo6, "Cincinnati", 199],
-    [Logo7, "Louisville", 201],
-    [Logo8, "Hartford", 202],
+    [Logo1, "Masuleh", 77],
+    [Logo2, "Kashan", 119],
+    [Logo3, "Tabriz bazaar", 125],
+    [Logo4, "Abyaneh village", 177],
+    [Logo5, "Esfahan bridges", 185],
+    [Logo6, "Wind catchers in Yazd", 199],
+    [Logo7, "Persepolis", 201],
+    [Logo8, "Esfahan city center", 202],
     [Logo9, "Ontario", 216],
     [Logo10, "Yosemite", 216],
     [Logo11, "Indianapolis", 217],

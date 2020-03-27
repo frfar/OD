@@ -24,9 +24,9 @@ const headerComponent = ( props ) => {
             <Navbar color="white" light expand="md">
                 <NavbarBrand href="http://localhost:3000/">
                     <img
-                        src="https://smlogin.aa.com/login/images/aa-logo-web.png"
-                        width="250"
-                        height="50"
+                        src="https://i.ytimg.com/vi/UddBLSH8C3o/maxresdefault.jpg"
+                        width="140"
+                        height="70"
                         className="d-inline-block align-top"
                         alt="React Bootstrap logo"
                     />

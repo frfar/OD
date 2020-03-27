@@ -61,7 +61,7 @@ const NavBar = ({name1, name1Onchange, email, emailOnchange, company, companyOnc
                                     <Row>
                                         <Col sm={10}>
                                             <FormGroup style={textStyle}>
-                                                <Input style={textStyle} type="air" value={name1} onChange={name1Onchange} name="origin" id="airport" placeholder="Where Are You?" />
+                                                <Input style={textStyle} type="air" value={name1} onChange={name1Onchange} name="origin" id="airport" placeholder="Where do you want to go?" />
                                             </FormGroup>
                                         </Col>
                                         <Col sm={2}>

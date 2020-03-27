@@ -59,7 +59,7 @@ render(){
 
 return (
         <IntroPage name1={this.name1} name1Onchange={this.name1Onchange}
-            img='https://singularityhub.com/wp-content/uploads/2018/12/airplane-flying-above-clouds_shutterstock_553131187-1068x601.jpg'
+            img='http://waveuptravel.com/wp-content/uploads/2014/12/DSC_0146.jpg'
             />
     );
 
