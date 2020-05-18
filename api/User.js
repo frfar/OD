@@ -1,0 +1,17 @@
+const express = require('express');
+const mongoose = require('mongoose');
+const User = require('../DBConnection/User');
+var router = express.Router();
+
+router.post('/', async(req,res)=>{
+    const{firstName, lastName} = req.body;
+    let user = {};
+    user.firstName = firstName;
+    user.lastName = lastName;
+    let userModel= new User(user);
+    await userModel.save();
+    res.json(userModel);
+})
+
+module.exports = router;
+
